@@ -423,3 +423,7 @@ temp/
 
 ##DrawIO
 .$netwerkontwerp.drawio
+
+#Compiled Files
+!*.*
+Les-1/*/main
