@@ -426,4 +426,5 @@ temp/
 
 #Compiled Files
 !*.*
-Les-1/*/main
+*/*/main
+.~lock.*
