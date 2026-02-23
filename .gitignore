@@ -434,3 +434,7 @@ temp/
 *.ilk
 *.obj
 *.pdb
+
+
+#Visual Studio
+.vs
