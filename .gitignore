@@ -428,3 +428,9 @@ temp/
 !*.*
 */*/main
 .~lock.*
+
+#C Build Files
+*.exe
+*.ilk
+*.obj
+*.pdb

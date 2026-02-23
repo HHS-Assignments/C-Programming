@@ -7,36 +7,58 @@ Verberg de complexiteit van het maken van een random getal in een functie */
 #include <stdio.h>
 #include <stdlib.h>
 #include <time.h>
-#include <stdbool.h>
 
-int randomGetal(int bovengrens) {
-    srand(time(NULL));
-    int Random_Out = rand() % 100;
-    return Random_Out;
-}
-bool hoog_laag(int Eigen_Getal, int Tegen_Getal, int gok) {
-    if (Eigen_Getal > Tegen_Getal) {
-        printf("Hoger\n");
-        return true;
-    }
-    else if (Eigen_Getal < Tegen_Getal) {
-        printf("Lager\n");
-        return true;
-    }
-    else {
-        printf("Goed geraden!\n");
-        return false;
-    }
+int randomGetal(int ondergrens, int bovengrens) {
+    return ondergrens + rand() % (bovengrens - ondergrens + 1);
 }
 
 int main() {
-    int Eigen_Getal = randomGetal(100);
-    int Tegen_Getal = randomGetal(100);
-    int gok;
-    printf("Je Eigen Getal:%d\n", Eigen_Getal);
-    printf("Gok: \n1: Is het Hoger\n2: Is het Lager\n");
-    scanf("%d", &gok);
-    hoog_laag(Eigen_Getal, Tegen_Getal, gok);
-    printf("het Getal: %d\n", Tegen_Getal);
+    char nogmaals;
+    srand(time(NULL));
+    
+    do {
+        int ondergrens, bovengrens, getal, gok;
+        int gokken[100];
+        int aantal = 0;
+        
+        printf("\nGeef ondergrens: ");
+        scanf("%d", &ondergrens);
+        printf("Geef bovengrens: ");
+        scanf("%d", &bovengrens);
+        
+        getal = randomGetal(ondergrens, bovengrens);
+        printf("\nRaad het getal tussen %d en %d!\n", ondergrens, bovengrens);
+        
+        for (int i = 0; i < 7; i++) {
+            printf("Gok %d: ", i + 1);
+            scanf("%d", &gok);
+            gokken[aantal] = gok;
+            aantal++;
+            
+            if (gok == getal) {
+                printf("Goed geraden!\n");
+                break;
+            } else if (gok < getal) {
+                printf("Hoger!\n");
+            } else {
+                printf("Lager!\n");
+            }
+        }
+        
+        if (gok != getal) {
+            printf("Het getal was %d\n", getal);
+        }
+        
+        printf("Je gokken: ");
+        for (int i = 0; i < aantal; i++) {
+            printf("%d ", gokken[i]);
+        }
+        printf("\n");
+        
+        printf("\nNogmaals spelen? (j/n): ");
+        scanf(" %c", &nogmaals);
+        
+    } while (nogmaals == 'j' || nogmaals == 'J');
+    
     return 0;
 }
