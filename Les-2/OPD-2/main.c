@@ -9,20 +9,19 @@ char* stringcopy(const char *src, char *dest, int dest_size);
 int main(){
     char str1[14] = "Hello, World!";
     char str2[14];  
-
-    stringcopy(str1, str2, strlen(str1));
-
     printf("Str 1: %s\n", str1);
+    stringcopy(str1, str2, sizeof(str1));
     printf("Str 2: %s\n", str2);
     return 0;
 }
 
 char* stringcopy(const char *src, char *dest, int dest_size) {
     int i;
-    if (strlen(src) + 1 > dest_size) {
+    if (strlen(src) > dest_size) {
         printf("Error: Source string is too large for destination buffer.\n");
         return NULL;
     }else{
+    printf("Source string fits in destination buffer. Proceeding with copy.\n");
     for (i = 0; src[i] != '\0'; i++) {
         dest[i] = src[i];
     }
