@@ -10,7 +10,7 @@ int main(){
     char str1[14] = "Hello, World!";
     char str2[14];  
     printf("Str 1: %s\n", str1);
-    stringcopy(str1, str2, sizeof(str1));
+    stringcopy(str1, str2, sizeof(str2));
     printf("Str 2: %s\n", str2);
     return 0;
 }

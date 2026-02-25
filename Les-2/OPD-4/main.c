@@ -10,3 +10,11 @@
 // c)	Vervolgens ga je op basis van de array van structs de punten en het doelsaldo bereken.
 // d)	Sla ook het resultaat van deze berekening op in een andere struct. Print op basis van dit bestand: 3 wedstrijden, 6 punten en doelsaldo (4-2). NB: gelijkspelen kunnen uiteraard ook
 // e)	Geef de gebruiker de mogelijkheid om de naam van een tegenstander in te typen en geef aan of van die club is gewonnen of niet. 
+
+#include <stdio.h>
+#include <string.h>
+
+int main(){
+
+    return 0;
+}
