@@ -429,6 +429,7 @@ temp/
 */*/main
 .~lock.*
 
+
 #C Build Files
 *.exe
 *.ilk
@@ -438,3 +439,6 @@ temp/
 
 #Visual Studio
 .vs
+
+## Test Files
+tempCodeRunnerFile.c
