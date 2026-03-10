@@ -16,7 +16,3 @@ iedere index berekend. Voorbeeld:
 | Array1   | 6 | 9  | 40 | 12 | 1  |
 | Array2   | 7 | 10 | 5  | 4  | 4  |
 | Resultaat| 7 | 10 | 40 | 12 | 4  |
-
-**Confidence: 1.0**
-
-The table now uses proper markdown syntax with pipes and dashes.
