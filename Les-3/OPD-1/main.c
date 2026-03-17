@@ -24,7 +24,10 @@ void printArray(double array[], int grootte) {
 int main(void) {
     // test array 1: 3 getallen
     double getallen1[] = {5.89, 6.20, -2.13};
-    printArray(getallen1, 3);
+    printArray(getallen1, 3);[5.89, 6.20, -2.13]
+[3.14]
+[1.00, 2.50, 101.00, -0.50]
+[1] + Done                  
 
     // test array 2: 1 getal
     double getallen2[] = {3.14};
