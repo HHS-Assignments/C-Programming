@@ -2,3 +2,5 @@ Voor alle opdrachten geldt: 100% C code, dus geen C++ code. Gebruik alleen de st
 
 Try to change files in the code editor insted of outputting the files in the terminal
 IF you write any code write it in a way that a student that just started programming in C can understand it
+
+the code wil be created in a a main.c file and the instructions will be in a file called Opdracht.md. The Opdracht.md file will contain the instructions for the assignment and if the assigment requres any command or actions it wil be documented in the Opdracht.md file. The main.c file will contain the code that implements the solution to the assignment. The code will be written in a clear and concise manner, with comments explaining the purpose of each section of code.
