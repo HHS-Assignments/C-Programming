@@ -1,0 +1,28 @@
+struct product {
+	char naam[20];
+	double prijs;
+	int gewicht; //in gram
+	char merk[10];
+};
+
+struct product boodschappen[] = { 
+	{"Brood", 2.49, 700, "AH"},
+	{"Yoghurt", 1.55, 1000, "Campina"},
+	{"Appels", 2.49, 1500, "Elstar"},
+	{"Peren", 2.65, 1500, "Conf"},
+	{"Hagelslag", 2.65, 400, "Venz"}
+};
+
+int compareOpPrijs(const void* a, const void* b)
+{
+	struct product productA = *((struct product*)a); //a is void pointer, cast nodig
+	double prijsA = productA.prijs;
+	struct product productB = *((struct product*)b);
+	double prijsB = productB.prijs;
+	if (prijsB - prijsA > 0) return -1; //B duurder
+	if (prijsB - prijsA < 0) return 1;	//A duurder
+	return 0; //gelijk
+}
+
+int aantal = sizeof(boodschappen) / sizeof(boodschappen[0]);
+qsort(mandje, 3, sizeof(struct product), <naam functie>);
