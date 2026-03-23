@@ -10,5 +10,3 @@ functie heeft een single pointer als parameter. Alleen in de main wordt geprint.
 in welke rij of kolom of blok er een fout zit.
 f) Test de vorige vraag ook met andere tekstbestanden. Om te testen heb je ook bestanden nog
 die een fout bevatten.
-g) Optioneel: controleer niet alleen de som maar ook of ieder getal wel 1 en 9 maar 1x
-voorkomt in een rij, enz

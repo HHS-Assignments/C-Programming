@@ -4,7 +4,4 @@ code in Visual Studio. Maak gebruik van een al compiled package met de dll, lib 
 file. Dit is een stuk eenvoudiger dan zelf freeglut compileren.
 b) Maak een significante aanpassing in wat er getoond wordt op het scherm. Er wordt minimaal
 1 extra opengl functie gebruikt. Toetsenbord invoer moet nog steeds effect hebben. Geef aan
-welke nieuwe opengl functies je hebt gebruikt en wat deze doen
-c) (optioneel) Teken met 2D figuren de beginstand van een damspel.
-d) (Uitdaging) Geef de mogelijkheid van een zet voor de gebruiker. Inclusief slaan. Als je ook
-het behalen van een dam toestaat wordt het nog wat lastiger.
+welke nieuwe opengl functies je hebt gebruikt en wat deze doen 
